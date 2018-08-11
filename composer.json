@@ -1,0 +1,24 @@
+{
+    "name": "shopify/shipFree",
+    "authors": [
+        {
+            "name": "Nate Davis",
+            "email": "n8davis@me.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "^3.7",
+        "illuminate/database": "~5.1",
+        "illuminate/support": "~5.6",
+        "phpclassic/php-shopify": "^1.0",
+        "slim/twig-view": "^2.3",
+        "vlucas/phpdotenv": "^2.4",
+        "monolog/monolog": "^1.23",
+        "symfony/console": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Skeleton\\": "Skeleton/"
+        }
+    }
+}
