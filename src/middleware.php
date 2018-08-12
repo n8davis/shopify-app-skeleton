@@ -30,7 +30,7 @@ $shopExists = function ($request, $response, $next) {
     if( is_null( $shop ) ){
         $scopes      = 'read_shipping,write_shipping';
         $redirectUrl =  rawurlencode( \Skeleton\Skeleton::baseUrl(). 'redirect'  );
-        $authUrl     = \App\Skeleton\Shopify\Auth::authRequest( $scopes , $redirectUrl );
+        $authUrl     = \Skeleton\Shopify\Auth::authRequest( $scopes , $redirectUrl );
         return $response->withRedirect(  $authUrl );
     }
 
