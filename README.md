@@ -4,6 +4,12 @@
 ``
 composer update
 ``
+##### Edit ./config.php
+
+``
+$basePath = dirname( __DIR__ ) . DIRECTORY_SEPARATOR . 'YOUR_DIRECTORY' . DIRECTORY_SEPARATOR ;
+``
+
 ##### Copy .env.example to .env and fill out settings
 
 ````
